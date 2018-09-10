@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-color: #D5F5E3;
+	list-style: none;
+	text-decoration: none;
+}
+
+#wrapp {
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+/*header*/
+
+h1 {
+	background-color: lime;
+	text-align: center;
+	margin: 0px;
+	font-size: 2.5em;
+}
+
+
+/*navigacija*/
+
+nav ul {
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 0px;
+	font-size: 2.5em;
+	margin-left: 250px;
+}
+
+nav ul li:hover {
+	color: lightblue;
+	cursor: pointer;
+}
+
+
+/*Meni lista*/
+
+.Meni {
+	float: right;
+	margin: 25px;
+	font-size: 2em;
+
+}
+.Meni li {
+	margin-right: 15px;
+	list-style: none;
+	padding: 3px;
+	text-align: center;
+	text-shadow: 2.5px 2.5px 2.5px #666;
+}
+
+.Meni li:hover {
+	color: orange;
+	cursor: pointer;
+}
+
+
+/*footer*/
+
+h5 {
+ 	font-size: small;
+ 	border:1px solid grey;
+ 	border-radius: 25px;
+ 	background-color: yellow;
+ 	text-align: center;
+}
+
+
+/* slider */
+
+@keyframes slidery {
+	0% {left: 0%;}
+	10% {left: 0%;}
+	12% {left: -100%;}
+	22% {left: -100%;}
+	24% {left: -200%;}
+	34% {left: -200%;}
+	36% {left: -300%;}
+	46% {left: -300%;}
+	48% {left: -400%;}
+	58% {left: -400%;}
+	60% {left: -300%;}
+	70% {left: -300%;}
+	72% {left: -200%;}
+	82% {left: -200%;}
+	84% {left: -100%;}
+	94% {left: -100%;}
+	96% {left: 0%;}
+}
+
+
+.slider {
+	overflow: hidden;
+}
+
+.slider figure img {
+	width: 20%;
+	height: 690px;
+	float: left;
+}
+
+.slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slidery infinite;
+}
